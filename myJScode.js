@@ -22,7 +22,7 @@ numberChecker(userNumber1, userNumber2); */
 /* const userArray = [];
 
  for (let i = 0; i < 5; i++) {
-  const userInput = parseInt(prompt("Ingresa un número"));
+  const userInput = parseInt(prompt("Ingresa un número, hasta llegar a un maximo de cinco valores"));
   userArray.push(userInput);
 }
 
@@ -34,3 +34,20 @@ for (let numbers of userArray) {
   }
 }
  */
+
+const randomArrayElements = [];
+
+for (let i = 0; i < 5; i++) {
+  const userInput = parseInt(
+    prompt("Ingresa un número, hasta llegar a un maximo de cinco valores")
+  );
+  randomArrayElements.push(userInput);
+}
+
+let plusOp = randomArrayElements.reduce(function (a, b) {
+  return a + b;
+});
+
+let splitOp = plusOp / 5;
+
+alert("El promedio de los valores ingresados es " + splitOp);
