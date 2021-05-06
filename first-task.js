@@ -35,6 +35,8 @@ for (let numbers of userArray) {
 }
  */
 
+//TAREA 3
+
 const randomArrayElements = [];
 
 for (let i = 0; i < 5; i++) {
