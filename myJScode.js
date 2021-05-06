@@ -19,9 +19,9 @@ numberChecker(userNumber1, userNumber2); */
 
 //TAREA 2
 
-const userArray = [];
+/* const userArray = [];
 
-/* for (let i = 0; i < 5; i++) {
+ for (let i = 0; i < 5; i++) {
   const userInput = parseInt(prompt("Ingresa un número"));
   userArray.push(userInput);
 }
