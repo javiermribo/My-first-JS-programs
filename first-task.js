@@ -37,7 +37,7 @@ for (let numbers of userArray) {
 
 //TAREA 3
 
-const randomArrayElements = [];
+/* const randomArrayElements = [];
 
 for (let i = 0; i < 5; i++) {
   const userInput = parseInt(
@@ -53,3 +53,23 @@ let plusOp = randomArrayElements.reduce(function (a, b) {
 let splitOp = plusOp / 5;
 
 alert("El promedio de los valores ingresados es " + splitOp);
+ */
+
+//TAREA 4
+
+const firstUserArray = [];
+
+for (let i = 0; i < 7; i++) {
+  const userInput = parseInt(
+    prompt("Ingresa un número, hasta llegar a un maximo de siete valores")
+  );
+  firstUserArray.push(userInput);
+}
+
+const topTenUserArray = [];
+
+for (let i = 0; i < firstUserArray.length; i++) {
+  if (firstUserArray[i] >= 10) {
+    topTenUserArray.push(firstUserArray[i]);
+  }
+}
