@@ -66,10 +66,19 @@ for (let i = 0; i < 7; i++) {
   firstUserArray.push(userInput);
 }
 
-const topTenUserArray = [];
+let topTenUserArray2 = firstUserArray.filter((number) => number >= 10);
 
-for (let i = 0; i < firstUserArray.length; i++) {
+alert("Los números mayores a diez son los siguientes: " + topTenUserArray2);
+
+//const topTenUserArray = [];
+
+/* for (let i = 0; i < firstUserArray.length; i++) {
   if (firstUserArray[i] >= 10) {
     topTenUserArray.push(firstUserArray[i]);
   }
-}
+} */
+
+/* Con length, en este caso, le indicamos a for que i sea menor al n° de elementos de esa variable. 
+En if inidcamos que aquellos elementos de firstUserArray mayores a 10,
+sean guardados en topTenUserArray, utilizando push, y entre parentesis de que variable se tomarán 
+esos valores, junto con [i] que representa c/ unidad y su valor. */
