@@ -57,7 +57,7 @@ alert("El promedio de los valores ingresados es " + splitOp);
 
 //TAREA 4
 
-const firstUserArray = [];
+/* const firstUserArray = [];
 
 for (let i = 0; i < 7; i++) {
   const userInput = parseInt(
@@ -66,13 +66,15 @@ for (let i = 0; i < 7; i++) {
   firstUserArray.push(userInput);
 }
 
+//Utilizando filter
 let topTenUserArray2 = firstUserArray.filter((number) => number >= 10);
 
-alert("Los números mayores a diez son los siguientes: " + topTenUserArray2);
+alert("Los números mayores a diez son los siguientes: " + topTenUserArray2); */
 
-//const topTenUserArray = [];
+//Utilizando for e if
+/* const topTenUserArray = [];
 
-/* for (let i = 0; i < firstUserArray.length; i++) {
+for (let i = 0; i < firstUserArray.length; i++) {
   if (firstUserArray[i] >= 10) {
     topTenUserArray.push(firstUserArray[i]);
   }
@@ -82,3 +84,32 @@ alert("Los números mayores a diez son los siguientes: " + topTenUserArray2);
 En if inidcamos que aquellos elementos de firstUserArray mayores a 10,
 sean guardados en topTenUserArray, utilizando push, y entre parentesis de que variable se tomarán 
 esos valores, junto con [i] que representa c/ unidad y su valor. */
+
+//TAREA 5
+
+let trueFalseArray = [
+  true,
+  false,
+  false,
+  true,
+  true,
+  true,
+  false,
+  false,
+  true,
+  false,
+  false,
+];
+
+const trueFalseArrayResult = [];
+
+for (let i = 0; i < trueFalseArray.length; i++) {
+  if (trueFalseArray[i] === true) {
+    trueFalseArrayResult.push(trueFalseArray[i]);
+  }
+}
+
+//let trueFilter = trueFalseArray.filter((value) => value === true);
+
+console.log("La cantidad de valores true, es: " + trueFalseArrayResult.length);
+//console.log("La cantidad de valores true, es: " + trueFilter.length);
