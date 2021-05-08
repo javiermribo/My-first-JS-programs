@@ -87,7 +87,7 @@ esos valores, junto con [i] que representa c/ unidad y su valor. */
 
 //TAREA 5
 
-let trueFalseArray = [
+/* let trueFalseArray = [
   true,
   false,
   false,
@@ -112,4 +112,15 @@ for (let i = 0; i < trueFalseArray.length; i++) {
 //let trueFilter = trueFalseArray.filter((value) => value === true);
 
 console.log("La cantidad de valores true, es: " + trueFalseArrayResult.length);
-//console.log("La cantidad de valores true, es: " + trueFilter.length);
+//console.log("La cantidad de valores true, es: " + trueFilter.length); */
+
+//TAREA 6
+
+/* const worldArea = 510000000;
+
+const countryProperties = { countryName: "Thailand", area: 513115 };
+
+let opCalc = (countryProperties.area * 100) / worldArea;
+
+alert("Tailandia ocupa el %" + opCalc + " de la Tierra");
+ */
