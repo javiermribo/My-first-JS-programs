@@ -115,12 +115,10 @@ console.log("La cantidad de valores true, es: " + trueFalseArrayResult.length);
 //console.log("La cantidad de valores true, es: " + trueFilter.length); */
 
 //TAREA 6
-
-/* const worldArea = 510000000;
+const worldArea = 510000000;
 
 const countryProperties = { countryName: "Thailand", area: 513115 };
 
 let opCalc = (countryProperties.area * 100) / worldArea;
 
-alert("Tailandia ocupa el %" + opCalc + " de la Tierra");
- */
+alert("Tailandia ocupa el %" + opCalc.toFixed(2) + " de la Tierra");
