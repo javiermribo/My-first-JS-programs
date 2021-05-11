@@ -115,10 +115,58 @@ console.log("La cantidad de valores true, es: " + trueFalseArrayResult.length);
 //console.log("La cantidad de valores true, es: " + trueFilter.length); */
 
 //TAREA 6
-const worldArea = 510000000;
+/* const worldArea = 510000000;
 
 const countryProperties = { countryName: "Thailand", area: 513115 };
 
 let opCalc = (countryProperties.area * 100) / worldArea;
 
-alert("Tailandia ocupa el %" + opCalc.toFixed(2) + " de la Tierra");
+alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
+ */
+
+ //CALLBACKS
+
+/*  function imTheFirst (imTheSecond) {
+   console.log('Soy la primera función con callback');
+   imTheSecond();
+ }
+
+ function imTheSecond () {
+   console.log('Soy la segunda función');
+ }
+
+ imTheFirst(imTheSecond);
+ */
+ //Misma callback con setTimeout 
+
+/*   function imTheFirst1(imTheSecond2) {
+    setTimeout(function () {
+      console.log('Soy la primera función con callback');
+      imTheSecond2();
+    }, 5000);
+  }
+
+  function imTheSecond2() {
+    console.log('Soy la segunda función');
+  }
+
+  imTheFirst1(imTheSecond2); */
+
+  //Intento del callback n°3 
+
+  function firstQuote () {
+    alert('Vamos a cortarlo en dos y a manosearle el corazón');
+  }
+
+  function secondQuote () {
+    setTimeout(function () {
+      alert('¿Por que lo dice tan brusco?');
+    }, 3000);
+  }
+
+  function quoteCaller (cb) {
+    cb(firstQuote, secondQuote);
+  }
+
+  quoteCaller(firstQuote);
+  quoteCaller(secondQuote);
