@@ -154,7 +154,7 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
   //Intento del callback n°3 
 
-  function firstQuote () {
+/*   function firstQuote () {
     alert('Vamos a cortarlo en dos y a manosearle el corazón');
   }
 
@@ -169,4 +169,73 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
   }
 
   quoteCaller(firstQuote);
-  quoteCaller(secondQuote);
+  quoteCaller(secondQuote); */
+
+  //Practicando forEach
+
+  const phoneList = [
+    {brand:'Xiaomi', model:'Mi A2', price: 45000},
+    {brand:'Motorola', model:'G8 Plus', price: 49600},
+    {brand:'Samsung', model:'S20 FE', price: 78333},
+    {brand:'Huawei', model:'´80', price:74999},
+    {brand:'Apple', model:'iPhone 12', price: 120325},
+  ]
+
+  phoneList.forEach (item => {
+    console.log(`The price for ${item.brand} ${item.model} is ${item.price} ARS`)
+  })
+
+  //Practicando Map
+
+    const myPhoneList = [
+      { brand: "Xiaomi", model: "Mi A2", price: 45000 },
+      { brand: "Motorola", model: "G8 Plus", price: 49600 },
+      { brand: "Samsung", model: "S20 FE", price: 78333 },
+      { brand: "Huawei", model: "´80", price: 74999 },
+      { brand: "Apple", model: "iPhone 12", price: 120325 },
+    ];
+
+    const newList = myPhoneList.map(item => { return {price:item.price * 2} }); //Fn expresiva. Se crea un nuevo array con los valores modificados, respetando el principio de inmutabilidad
+    const phoneNames = myPhoneList.map(phone => phone.brand);
+
+    console.log(newList)
+    console.log(phoneNames)
+
+    //Practicando filter
+
+         const my3rdPhoneList = [
+          { brand: "Xiaomi", model: "Mi A2", price: 45000 },
+          { brand: "Xiaomi", model: "Mi A3", price: 45000 },
+          { brand: "Xiaomi", model: "Redmi Note 9", price: 45000 },
+          { brand: "Motorola", model: "G8 Plus", price: 49600 },
+          { brand: "Samsung", model: "S20 FE", price: 78333 },
+          { brand: "Huawei", model: "´80", price: 74999 },
+          { brand: "Apple", model: "iPhone 12", price: 120325 },
+        ];
+
+        const newList1 = my3rdPhoneList.filter(item => {
+/*           return item.brand === 'Xiaomi'; */
+          return item.price > 50000
+        });
+
+        console.log(newList1); 
+
+        const itemIndex = my3rdPhoneList.findIndex(item => {
+          return item.brand === 'Motorola';
+        })
+
+        console.log(itemIndex);
+
+        const checkingPhoneList = my3rdPhoneList.some(item => {
+          return item.price < 35000;
+        })
+
+        console.log(checkingPhoneList);
+
+        let initValue = 0;
+
+        const totalPrice = my3rdPhoneList.reduce(function(currentTotal, item) {
+          return (item.price + currentTotal)
+        }, initValue);
+
+        console.log(totalPrice);
