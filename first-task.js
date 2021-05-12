@@ -195,7 +195,8 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
       { brand: "Apple", model: "iPhone 12", price: 120325 },
     ];
 
-    const newList = myPhoneList.map(item => { return {price:item.price * 2} }); //Fn expresiva. Se crea un nuevo array con los valores modificados, respetando el principio de inmutabilidad
+    const newList = myPhoneList.map(item => { return {price:item.price * 2} }); 
+    //Fn expresiva. Se crea un nuevo array con los valores modificados, respetando el principio de inmutabilidad (No se modifica el array original)
     const phoneNames = myPhoneList.map(phone => phone.brand);
 
     console.log(newList)
@@ -235,7 +236,7 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
         let initValue = 0;
 
         const totalPrice = my3rdPhoneList.reduce(function(currentTotal, item) {
-          return (item.price + currentTotal)
+          return currentTotal + item.price;
         }, initValue);
 
         console.log(totalPrice);
