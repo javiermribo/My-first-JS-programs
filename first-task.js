@@ -173,7 +173,7 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
   //Practicando forEach
 
-  const phoneList = [
+/*   const phoneList = [
     {brand:'Xiaomi', model:'Mi A2', price: 45000},
     {brand:'Motorola', model:'G8 Plus', price: 49600},
     {brand:'Samsung', model:'S20 FE', price: 78333},
@@ -183,11 +183,11 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
   phoneList.forEach (item => {
     console.log(`The price for ${item.brand} ${item.model} is ${item.price} ARS`)
-  })
+  }) */
 
   //Practicando Map
 
-    const myPhoneList = [
+/*     const myPhoneList = [
       { brand: "Xiaomi", model: "Mi A2", price: 45000 },
       { brand: "Motorola", model: "G8 Plus", price: 49600 },
       { brand: "Samsung", model: "S20 FE", price: 78333 },
@@ -201,10 +201,10 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
     console.log(newList)
     console.log(phoneNames)
-
+ */
     //Practicando filter
 
-         const my3rdPhoneList = [
+/*          const my3rdPhoneList = [
           { brand: "Xiaomi", model: "Mi A2", price: 45000 },
           { brand: "Xiaomi", model: "Mi A3", price: 45000 },
           { brand: "Xiaomi", model: "Redmi Note 9", price: 45000 },
@@ -212,14 +212,14 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
           { brand: "Samsung", model: "S20 FE", price: 78333 },
           { brand: "Huawei", model: "´80", price: 74999 },
           { brand: "Apple", model: "iPhone 12", price: 120325 },
-        ];
+        ]; */
 
-        const newList1 = my3rdPhoneList.filter(item => {
-/*           return item.brand === 'Xiaomi'; */
+/*         const newList1 = my3rdPhoneList.filter(item => {
+          return item.brand === 'Xiaomi';
           return item.price > 50000
-        });
+        }); */
 
-        console.log(newList1); 
+/*         console.log(newList1); 
 
         const itemIndex = my3rdPhoneList.findIndex(item => {
           return item.brand === 'Motorola';
@@ -239,4 +239,12 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
           return currentTotal + item.price;
         }, initValue);
 
-        console.log(totalPrice);
+        console.log(totalPrice); */
+
+        const ourNames = [`javier`, `soledad`, `flor`, `gimena`];
+        console.log(ourNames);
+
+        for(let i = 0; i < ourNames.length; i++) {
+          console.log(ourNames[i].charAt(0).toUpperCase() + ourNames[i].slice(1));
+        }
+
