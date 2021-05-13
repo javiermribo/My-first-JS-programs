@@ -242,9 +242,13 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
         console.log(totalPrice); */
 
         const ourNames = [`javier`, `soledad`, `flor`, `gimena`];
-        console.log(ourNames);
+        
+        const capNamesArray = [];
 
-        for(let i = 0; i < ourNames.length; i++) {
-          console.log(ourNames[i].charAt(0).toUpperCase() + ourNames[i].slice(1));
-        }
+         for (let i = 0; i < ourNames.length; i++) {
+             capNamesArray.push(
+               ourNames[i].charAt(0).toUpperCase() + ourNames[i].slice(1)
+             );
+           }
 
+        console.log(capNamesArray)
