@@ -181,8 +181,8 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
     {brand:'Apple', model:'iPhone 12', price: 120325},
   ]
 
-  phoneList.forEach (item => {
-    console.log(`The price for ${item.brand} ${item.model} is ${item.price} ARS`)
+  phoneList.forEach (phone => {
+    console.log(`The price for ${phone.brand} ${phone.model} is ${phone.price} ARS`)
   }) */
 
   //Practicando Map
@@ -241,14 +241,19 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
         console.log(totalPrice); */
 
-        const ourNames = [`javier`, `soledad`, `flor`, `gimena`];
+        //EJERCICIO 3. CAPITALIZE THE NAMES
+
+        const ourNames = [`alberto`, `cintia`, `rossana`, `luisa`];
         
+        function arrayFunction (names) { 
         const capNamesArray = [];
-
-         for (let i = 0; i < ourNames.length; i++) {
+        for (let i = 0; i < names.length; i++) {
              capNamesArray.push(
-               ourNames[i].charAt(0).toUpperCase() + ourNames[i].slice(1)
+               names[i].charAt(0).toUpperCase() + names[i].slice(1)
              );
-           }
+            }
+            return capNamesArray;
+          }
 
-        console.log(capNamesArray)
+        console.log(arrayFunction(['javier', 'flor', 'soledad', 'gimena', 'juan', 'braulio', 'alejandro']));
+        console.log(arrayFunction(ourNames)); //Si una función cuenta con varios parametros, al ejecutarla, se debe incluirlos
