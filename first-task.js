@@ -243,7 +243,7 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
         //EJERCICIO 3. CAPITALIZE THE NAMES
 
-        const ourNames = [`alberto`, `cintia`, `rossana`, `luisa`];
+        /* const ourNames = [`alberto`, `cintia`, `rossana`, `luisa`];
         
         function arrayFunction (names) { 
         const capNamesArray = [];
@@ -256,14 +256,11 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
           }
 
         console.log(arrayFunction(['javier', 'flor', 'soledad', 'gimena', 'juan', 'braulio', 'alejandro']));
-        console.log(arrayFunction(ourNames)); //Si una función cuenta con varios parametros, al ejecutarla, se debe incluirlos
+        console.log(arrayFunction(ourNames)); */ //Si una función cuenta con varios parametros, al ejecutarla, se debe incluirlos
 
         //EJERCICIO 4. BUSCANDO A NEMO
 
-        const userAttemptsLog = [];
-
-        const userAttempt = parseInt(prompt('Adivina donde se encuentra Nemo. Ingresa un número entre 0 y 6.'));
-        userAttemptsLog.push(userAttempt);
+/*         const userAttempt = parseInt(prompt('Adivina donde se encuentra Nemo. Ingresa un número entre 0 y 6.'));
 
 
         let nemoIsMissing = ['nimo', 'namo', 'nomo', 'numo', 'nemo', 'name', 'nume']
@@ -280,4 +277,15 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
           }
         }
 
-        result(userAttempt, findingNemo);
+        result(userAttempt, findingNemo); */
+
+        //EJERCICIO 6. LOVES ME, LOVES ME NOT
+
+        const userGameInput = parseInt(prompt('Ingresa un número y descubre si eres correspondido'));
+        
+        let value1 = 'Loves Me ';
+        let value2 = '--Loves Me Not --';
+
+
+        newUserArray.push(value1.concat(value2).repeat(userGameInput));
+        console.log(newUserArray);
