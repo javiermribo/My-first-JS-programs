@@ -286,6 +286,26 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
         let value1 = 'Loves Me ';
         let value2 = '--Loves Me Not --';
 
+/*         const loveArray = [
+          'Loves Me ',
+          'Loves Me Not ',
+          'Loves Me',
+          'Loves Me Not, ',
+          'Loves Me ',
+          'Loves Me Not ',
+          'Loves Me',
+          'Loves Me Not, ',
+          'Loves Me ',
+          'Loves Me Not, ',
+        ];
 
-        newUserArray.push(value1.concat(value2).repeat(userGameInput));
-        console.log(newUserArray);
+        loveArray.splice(0, 1, 'LOVES ME');
+        console.log(loveArray) */
+
+/*         for(i = 0; i < userGameInput; i++) {
+          console.log(value1.repeat(userGameInput)) 
+        }  */
+
+        if(userGameInput === 1) {
+          console.log('LOVES ME')
+        }
