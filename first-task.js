@@ -308,4 +308,6 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
         if(userGameInput === 1) {
           console.log('LOVES ME')
+        } else if(userGameInput % 2 === 0) {
+          console.log('LOVES ME' + value2)
         }
