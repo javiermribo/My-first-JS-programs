@@ -257,3 +257,27 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
         console.log(arrayFunction(['javier', 'flor', 'soledad', 'gimena', 'juan', 'braulio', 'alejandro']));
         console.log(arrayFunction(ourNames)); //Si una función cuenta con varios parametros, al ejecutarla, se debe incluirlos
+
+        //EJERCICIO 4. BUSCANDO A NEMO
+
+        const userAttemptsLog = [];
+
+        const userAttempt = parseInt(prompt('Adivina donde se encuentra Nemo. Ingresa un número entre 0 y 6.'));
+        userAttemptsLog.push(userAttempt);
+
+
+        let nemoIsMissing = ['nimo', 'namo', 'nomo', 'numo', 'nemo', 'name', 'nume']
+
+        const findingNemo = nemoIsMissing.findIndex(item => {
+          return item === 'nemo';
+        });
+
+        function result(userAttempt, findingNemo) {
+          if (userAttempt === findingNemo) {
+            alert('Encontré a Nemo en la posición ' + findingNemo);
+          } else if (userAttempt !== findingNemo) {
+            alert('No pude encontrar a Nemo')
+          }
+        }
+
+        result(userAttempt, findingNemo);
