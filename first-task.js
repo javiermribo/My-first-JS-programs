@@ -281,35 +281,53 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
         //EJERCICIO 6. LOVES ME, LOVES ME NOT
 
-        const userGameInput = parseInt(prompt('Ingresa un número y descubre si eres correspondido'));
+/*         const counter = parseInt(
+          prompt("Ingresa un número y descubre si eres correspondido")
+        );
+
+          function lovesMeOrNot(counter) {
+            const arrayLoves = [];
+            for (let i = 0; i < counter; i++) {
+              if (i % 2 === 0) {
+                arrayLoves.push("loves me not");
+              } else {
+                arrayLoves.push("loves me");
+              }
+            }
+            const lastElement = arrayLoves.pop();
+            arrayLoves.push(lastElement.toUpperCase());
+            return arrayLoves.join(", ");
+          }
+          console.log(lovesMeOrNot(counter)); */
+
+        //EJERCICIO RANDOM 
+
+/*         let numberArray = [5, 24, 36, 74, 87, 95, 1, 210, 351, 7, 98, 23, 12];
+        let higherNumberIs = 0;
         
-        let value1 = 'Loves Me ';
-        let value2 = '--Loves Me Not --';
 
-/*         const loveArray = [
-          'Loves Me ',
-          'Loves Me Not ',
-          'Loves Me',
-          'Loves Me Not, ',
-          'Loves Me ',
-          'Loves Me Not ',
-          'Loves Me',
-          'Loves Me Not, ',
-          'Loves Me ',
-          'Loves Me Not, ',
-        ];
-
-        loveArray.splice(0, 1, 'LOVES ME');
-        console.log(loveArray) */
-
-/*         for(i = 0; i < userGameInput; i++) {
-          console.log(value1.repeat(userGameInput)) 
-        }  */
-
-        if(userGameInput === 1) {
-          console.log('LOVES ME')
-        } else if(userGameInput % 2 === 0) {
-          console.log('LOVES ME ' + value2)
-        } else if(userGameInput % 2 === 1) {
-          console.log('LOVES ME ' + value2.concat(value1))
+        for(i = 0; i < numberArray.length; i++) {
+          if(numberArray[i] > higherNumberIs) {
+            higherNumberIs =  numberArray[i]
+          }
         }
+
+        console.log("El valor mas alto es " + higherNumberIs); */
+
+        //EJERCICIO 7 
+
+        let refValue = 0;
+
+        function lowAndHigh (value1, value2) {
+          for(i = 0; i < lowAndHigh.length; i++) {
+          if(value1[i] > refValue) {
+            refValue = value1[i]
+            console.log(value1[i] + ' es el mayor');
+          } else if(value2[i] < refValue) {
+            console.log(value2[i] + ' es el menor')
+          }
+        }
+      }
+
+        lowAndHigh([2, 52, 84, 15])
+
