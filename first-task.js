@@ -316,18 +316,21 @@ alert('Tailandia ocupa el %' + opCalc.toFixed(2) + ' de la Tierra');
 
         //EJERCICIO 7 
 
-        let refValue = 0;
+        let lowAndHighArray = [1, 15, 52, 84, 115, -93];
 
-        function lowAndHigh (value1, value2) {
-          for(i = 0; i < lowAndHigh.length; i++) {
-          if(value1[i] > refValue) {
-            refValue = value1[i]
-            console.log(value1[i] + ' es el mayor');
-          } else if(value2[i] < refValue) {
-            console.log(value2[i] + ' es el menor')
+        function lowAndHighValues () {
+          let maxValue = [0];
+          let minValue = [1];
+          for(i = 0; i < lowAndHighArray.length; i++){
+            if(lowAndHighArray[i] > maxValue) {
+              maxValue = lowAndHighArray[i];
+            } else if(lowAndHighArray[i] < minValue) {
+              minValue = lowAndHighArray[i];
+            }
           }
+          console.log(maxValue + " Es el mayor");
+          console.log(minValue + " Es el menor");
         }
-      }
-
-        lowAndHigh([2, 52, 84, 15])
+        
+        lowAndHighValues()
 
