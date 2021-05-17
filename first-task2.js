@@ -7,7 +7,6 @@ function theLargerLength(arrayWords) {
     wordsLengthValues.push(arrayWords[i].length);
   }
 }
-
 theLargerLength(arrayWords);
 
 let theMaxValue = [];
@@ -19,10 +18,7 @@ function maxValue(wordsLengthValues) {
     }
   }
 }
-
 maxValue(wordsLengthValues);
-
-let theLargestWord = [];
 
 function comparatorValues () {
   for (let word of arrayWords) {
@@ -31,5 +27,4 @@ function comparatorValues () {
     }
   }
 }
-
 comparatorValues();
