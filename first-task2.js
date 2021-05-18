@@ -31,6 +31,8 @@ comparatorValues(); */
 
 
 //EJERCICIO DE MESES
+/*Nota para Luis: Hola Luis, como verás logré hacer lo que quería (bien por mi :D). 
+Seguramente el código se puede mejorar. Atte. Javi*/
 
 let theMonthsOfTheYear = [
   `Enero`,
