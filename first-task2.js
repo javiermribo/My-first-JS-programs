@@ -34,7 +34,11 @@ comparatorValues(); */
 
 function monthsOfTheYear (month) {
   for (i = 0; i < month.length; i++) {
-    console.log(month[i] + ` es un gran mes`);
+    if (month[i] === (month[i]%2===1)){
+      console.log(month[i] + ' es un gran mes')
+    } else {
+      console.log(month[i] + ' es un buen mes')
+    }
   }
 }
 
