@@ -32,17 +32,7 @@ comparatorValues(); */
 
 //EJERCICIO DE MESES
 
-function monthsOfTheYear (month) {
-  for (i = 0; i < month.length; i++) {
-    if (month[i] === (month[i]%2===1)){
-      console.log(month[i] + ' es un gran mes')
-    } else {
-      console.log(month[i] + ' es un buen mes')
-    }
-  }
-}
-
-monthsOfTheYear([
+let theMonthsOfTheYear = [
   `Enero`,
   `Febrero`,
   `Marzo`,
@@ -55,28 +45,14 @@ monthsOfTheYear([
   `Octubre`,
   `Noviembre`,
   `Diciembre`,
-]);
+];
 
-/*let myOddNumbers = [];
-
-  function oddNumber () {
-    for (let i = 0; i <= 12; i++) {
-    if(i % 2 === 1) {
-      myOddNumbers.push(i)
-    }
+function monthsOfTheYear(theMonthsOfTheYear) {
+  for (let index = 0; index < theMonthsOfTheYear.length; index++) {
+    if (index % 2 === 1) {
+      console.log(theMonthsOfTheYear[index] + " es un mes par");
+    } else console.log(theMonthsOfTheYear[index] + " es un mes impar");
   }
 }
-oddNumber();
 
-let monthsOfTheYear = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-
-function oddMonth (monthsOfTheYear) {
-  for (month in monthsOfTheYear) {
-    if (monthsOfTheYear[i] === myOddNumbers[i]) {
-      console.log(monthsOfTheYear[i] + ` es de los mejores meses`);
-    } else {
-      console.log(monthsOfTheYear[i] + ` es un buen mes`);
-    }
-  }
-}
-oddMonth(monthsOfTheYear);*/
+monthsOfTheYear(theMonthsOfTheYear);
