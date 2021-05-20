@@ -75,7 +75,7 @@ function monthsOfTheYear(theMonthsOfTheYear) {
 
 monthsOfTheYear(theMonthsOfTheYear); */
 
-const pcontainer = document.querySelector("#pcontainer");
+/* const pcontainer = document.querySelector("#pcontainer");
 const newSubtitle = document.createElement("h2");
 newSubtitle.textContent = "Soy un h2 saludando desde el DOM";
 pcontainer.appendChild(newSubtitle);
@@ -84,4 +84,6 @@ const newButton = document.createElement("button");
 const referenceGroup = document.querySelector("#pcontainer #p2");
 const pcontainer2 = document.querySelector("#pcontainer");
 newButton.textContent = "Soy un boton creado desde el DOM";
-pcontainer2.insertBefore(newButton, referenceGroup);
+pcontainer2.insertBefore(newButton, referenceGroup); */
+
+
