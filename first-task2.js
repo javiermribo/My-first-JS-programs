@@ -123,3 +123,40 @@ function level2() {
 }
 
 //letsPlay(level2);
+
+//EJERCICIO 6 (PRACTICA CON VARIABLES)
+
+function theHigherOne () {
+  let userArrayNumbers = [];
+  for(let i = 0; i < 3; i++) {
+  const userInput = parseInt(prompt('Ingresa 3 números'));
+  userArrayNumbers.push(userInput);
+  }
+  let referenceValue = [1];
+  for(let i = 0; i < userArrayNumbers.length; i++) {
+    if(userArrayNumbers[i] > referenceValue) {
+      referenceValue = userArrayNumbers[i];
+    }
+  }
+  return referenceValue + ' es el mayor de los números ingresados'
+}
+
+//console.log(theHigherOne());
+
+//EJERCICIO 8 (PRACTICA CON VARIABLES)
+
+function divisibleByTwo() {
+  let userArrayNumbers1 = [];
+  for (let i = 0; i < 1; i++) {
+    const userInput1 = parseInt(prompt("Ingresa un número"));
+    userArrayNumbers1.push(userInput1);
+  }
+  for (let i = 0; i < userArrayNumbers1; i++) {
+    if (userArrayNumbers1[i] % 2 === 0) {
+      return userArrayNumbers1[i] + " es divisible por dos";
+    }
+    else { return userArrayNumbers1[i] + ' no es divisible por dos'}
+  }
+}
+
+//console.log(divisibleByTwo());
