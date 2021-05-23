@@ -19,7 +19,8 @@ numberChecker(userNumber1, userNumber2); */
 
 //TAREA 2
 
-/* const userArray = [];
+function oddNotOdd () {
+ const userArray = [];
 
  for (let i = 0; i < 5; i++) {
   const userInput = parseInt(prompt("Ingresa un número, hasta llegar a un maximo de cinco valores"));
@@ -28,16 +29,19 @@ numberChecker(userNumber1, userNumber2); */
 
 for (let numbers of userArray) {
   if (numbers % 2 === 0) {
-    console.log(numbers, "El valor, es un número par");
+     console.log(numbers, "El valor, es un número par");
   } else if (numbers % 2 === 1) {
-    console.log(numbers, "El valor, es un número impar");
+     console.log(numbers, "El valor, es un número impar");
   }
 }
- */
+}
+//oddNotOdd()
+
 
 //TAREA 3
 
-/* const randomArrayElements = [];
+function average () {
+const randomArrayElements = [];
 
 for (let i = 0; i < 5; i++) {
   const userInput = parseInt(
@@ -46,18 +50,19 @@ for (let i = 0; i < 5; i++) {
   randomArrayElements.push(userInput);
 }
 
-let plusOp = randomArrayElements.reduce(function (a, b) {
-  return a + b;
+let plusOp = randomArrayElements.reduce((a, b) => {
+  return (a + b) / 5;
 });
 
 let splitOp = plusOp / 5;
-
 alert("El promedio de los valores ingresados es " + splitOp);
- */
+}
+//average();
+
 
 //TAREA 4
-
-/* const firstUserArray = [];
+function userTopTen () {
+const firstUserArray = [];
 
 for (let i = 0; i < 7; i++) {
   const userInput = parseInt(
@@ -65,11 +70,9 @@ for (let i = 0; i < 7; i++) {
   );
   firstUserArray.push(userInput);
 }
-
-//Utilizando filter
-let topTenUserArray2 = firstUserArray.filter((number) => number >= 10);
-
-alert("Los números mayores a diez son los siguientes: " + topTenUserArray2); */
+let topTenUserArray2 = firstUserArray.filter(number => number >= 10);
+alert("Los números mayores a diez son los siguientes: " + topTenUserArray2);
+}
 
 //Utilizando for e if
 /* const topTenUserArray = [];

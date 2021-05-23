@@ -31,3 +31,24 @@ let totalAmount = exampleArray.reduce ((a, b) => a + b, 0);
 let acumulator = (a, b) => a + b;
 
 let totalAmount2 = exampleArray.reduce (acumulator, 0)*/
+
+function userTopTen() {
+  const firstUserArray = [];
+
+  for (let i = 0; i < 7; i++) {
+    const userInput = parseInt(
+      prompt("Ingresa un número, hasta llegar a un maximo de siete valores")
+    );
+    firstUserArray.push(userInput);
+  }
+  firstUserArray.map(number => {
+    if(number >= 10){
+      return alert('Los números mayores a diez son los siguientes: ' + number);
+    }
+  })
+
+  //let topTenUserArray2 = firstUserArray.filter((number) => number >= 10);
+  //alert("Los números mayores a diez son los siguientes: " + topTenUserArray2);
+}
+
+userTopTen()
