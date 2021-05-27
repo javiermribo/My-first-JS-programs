@@ -51,4 +51,36 @@ function userTopTen() {
   //alert("Los números mayores a diez son los siguientes: " + topTenUserArray2);
 }
 
-userTopTen()
+//userTopTen()
+
+const selectingBtnId1 = document.querySelector('#btn-id1');
+selectingBtnId1.addEventListener('click', () => {
+  return alert('Hiciste click en el botón')
+})
+
+const selectingForm = document.querySelector('#my-form-id');
+const selectingUserName = document.querySelector('#username');
+const selectingTextField = document.querySelector('#textfield');
+const selectingBtnForm = document.querySelector('#btn-submit');
+
+/* selectingForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  console.log('Homero, quiero saber que haces al salir del trabajo');
+  console.log(username.value, textfield.value); 
+}) */
+
+selectingUserName.addEventListener('blur', () => {
+  if(username.value.length === 0) {
+    selectingUserName.style.border = '2px solid red';
+  }
+})
+
+selectingForm.addEventListener('submit', event => {
+  event.preventDefault();
+  if(username.value.length === 0 && selectingTextField.value.length === 0) {
+    const errorAlert = document.createElement('p');
+    errorAlert.innerText = 'El formulario donde nada puede malir sal';
+    selectingForm.append(errorAlert);
+    errorAlert.style.background = 'yellow';
+  }
+})
