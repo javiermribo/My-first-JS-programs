@@ -53,10 +53,10 @@ function userTopTen() {
 
 //userTopTen()
 
-const selectingBtnId1 = document.querySelector('#btn-id1');
+/* const selectingBtnId1 = document.querySelector('#btn-id1');
 selectingBtnId1.addEventListener('click', () => {
   return alert('Hiciste click en el botón')
-})
+}) */
 
 const selectingForm = document.querySelector('#my-form-id');
 const selectingUserName = document.querySelector('#username');
@@ -75,7 +75,7 @@ selectingUserName.addEventListener('blur', () => {
   }
 })
 
-selectingForm.addEventListener('submit', event => {
+/* selectingForm.addEventListener('submit', event => {
   event.preventDefault();
   if(username.value.length === 0 && selectingTextField.value.length === 0) {
     const errorAlert = document.createElement('p');
@@ -83,4 +83,20 @@ selectingForm.addEventListener('submit', event => {
     selectingForm.append(errorAlert);
     errorAlert.style.background = 'yellow';
   }
-})
+}) */
+
+const theParent = document.querySelector('#divp1');
+const referenceItem = document.querySelector('#username');
+const creatingLabel = document.createElement('label');
+creatingLabel.setAttribute('for', 'username');
+creatingLabel.textContent = 'Nombre de usuario';
+
+theParent.insertBefore(creatingLabel, referenceItem);
+
+const theParent2 = document.querySelector("#divp2");
+const referenceItem2 = document.querySelector("#textfield");
+const creatingLabel2 = document.createElement("label");
+creatingLabel2.setAttribute("for", "textfield");
+creatingLabel2.textContent = "Comentario";
+
+theParent2.insertBefore(creatingLabel2, referenceItem2);
