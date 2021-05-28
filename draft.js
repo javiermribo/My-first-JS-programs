@@ -100,3 +100,17 @@ creatingLabel2.setAttribute("for", "textfield");
 creatingLabel2.textContent = "Comentario";
 
 theParent2.insertBefore(creatingLabel2, referenceItem2);
+
+function practiceFn (event) {
+  if(event.type === 'click') {
+    event.target.innerText = 'Un botón muy, muy lindo'
+  } else if(event.type === 'dblclick') {
+    event.target.innerText = 'Hiciste click sobre un bonito botón'
+  }
+}
+
+//Evento semántico 
+
+const selectingCuteBtn = document.querySelector('#cuteBtn');
+cuteBtn.onclick = practiceFn;
+cuteBtn.ondblclick = practiceFn;
