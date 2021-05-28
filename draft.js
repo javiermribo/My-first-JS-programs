@@ -101,6 +101,8 @@ creatingLabel2.textContent = "Comentario";
 
 theParent2.insertBefore(creatingLabel2, referenceItem2);
 
+//Evento semántico 
+
 function practiceFn (event) {
   if(event.type === 'click') {
     event.target.innerText = 'Un botón muy, muy lindo'
@@ -109,8 +111,29 @@ function practiceFn (event) {
   }
 }
 
-//Evento semántico 
+/* const selectingCuteBtn = document.querySelector('#cuteBtn');
+cuteBtn.onclick = practiceFn;
+cuteBtn.ondblclick = practiceFn; */
+
+//Eventos con addEventListener
 
 const selectingCuteBtn = document.querySelector('#cuteBtn');
-cuteBtn.onclick = practiceFn;
-cuteBtn.ondblclick = practiceFn;
+//cuteBtn.addEventListener('click', practiceFn);
+//cuteBtn.addEventListener('dblclick', practiceFn);
+
+selectingCuteBtn.addEventListener('click', (event) => {
+  practiceFn(event);
+});
+
+selectingCuteBtn.addEventListener('dblclick', (event) => {
+  practiceFn(event);
+});
+
+const selectingCuteBtn2 = document.querySelector('#cuteBtn');
+
+const removingEvent = event => {
+  alert(`removiendo el evento ${event.type}`);
+  cuteBtn.removeEventListener('dblclick', removingEvent);
+}
+
+cuteBtn.addEventListener('dblclick', removingEvent);
