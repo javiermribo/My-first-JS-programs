@@ -9,7 +9,7 @@ selectingP.innerHTML = selectingP.innerText
 
   const selectH1 = document.querySelector('#headId');
   const referenceItem = document.querySelector('pid');
-  const creatingText = document.createElement('p');
+  const creatingText = document.createElement('h6');
   creatingText.setAttribute('id', 'wordCounter');
   creatingText.textContent = `La cantidad de palabras es: ${selectingP2.innerText.length}`;
 
