@@ -1,17 +1,17 @@
-const selectingP = document.querySelector('#pid');
+const SELECT_P = document.querySelector('#pid');
 
-selectingP.innerHTML = selectingP.innerText
+SELECT_P.innerHTML = SELECT_P.innerText
   .split(' ')
   .map(word => word.length > 8 ? `<span style="background: yellow"> ${word} </span>` : word)
   .join(' ')
 
-const selectingP2 = document.querySelector("#pid");
+const PARAGRAPH_SELECTOR = document.querySelector("#pid");
 
-const selectH1 = document.querySelector('#headId');
-const referenceItem = document.querySelector('pid');
-const creatingText = document.createElement('h6');
-creatingText.setAttribute('id', 'wordCounter');
-creatingText.textContent = `La cantidad de palabras es: ${selectingP2.innerText.split(' ').length}`;
+const HEADER_SELECTOR = document.querySelector("#headId");
+const REFERENCE_ITEM_SELECTOR = document.querySelector('pid');
+const NEW_TEXT_ITEM = document.createElement('h6');
+NEW_TEXT_ITEM.setAttribute('id', 'wordCounter');
+NEW_TEXT_ITEM.textContent = `La cantidad de palabras es: ${PARAGRAPH_SELECTOR.innerText.split(' ').length}`;
 
 
-headId.insertBefore(creatingText, referenceItem);
+headId.insertBefore(NEW_TEXT_ITEM, REFERENCE_ITEM_SELECTOR);
