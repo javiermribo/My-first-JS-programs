@@ -5,12 +5,13 @@ selectingP.innerHTML = selectingP.innerText
   .map(word => word.length > 8 ? `<span style="background: yellow"> ${word} </span>` : word)
   .join(' ')
 
-  const selectingP2 = document.querySelector("#pid");
+const selectingP2 = document.querySelector("#pid");
 
-  const selectH1 = document.querySelector('#headId');
-  const referenceItem = document.querySelector('pid');
-  const creatingText = document.createElement('h6');
-  creatingText.setAttribute('id', 'wordCounter');
-  creatingText.textContent = `La cantidad de palabras es: ${selectingP2.innerText.length}`;
+const selectH1 = document.querySelector('#headId');
+const referenceItem = document.querySelector('pid');
+const creatingText = document.createElement('h6');
+creatingText.setAttribute('id', 'wordCounter');
+creatingText.textContent = `La cantidad de palabras es: ${selectingP2.innerText.split(' ').length}`;
 
-  headId.insertBefore(creatingText, referenceItem);
+
+headId.insertBefore(creatingText, referenceItem);
